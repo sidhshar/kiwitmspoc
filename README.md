@@ -11,6 +11,7 @@ Kiwi Test Management System POC
 Once the services have started, Kiwi TCMS should be accessible at http://<IP> in your browser
 - Initialize the database from the UI
 - Create the First user using the Register from UI
+- docker exec -it kiwi_web /Kiwi/manage.py initial_setup
 - Install the requirements
 ```
 pip install -r requirements.txt

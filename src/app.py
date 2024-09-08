@@ -10,11 +10,15 @@ app = Flask(__name__)
 # Replace with your Kiwi TCMS API token and URL
 api_token = os.getenv("API_TOKEN")
 tcms_url = os.getenv("TCMS_URL")
-username = os.getenv("USERNAME")
+kuser = os.getenv("USER")
+kuserp = os.getenv("USERP")
+
 # tcms_url = 'http://localhost:8080'  # Or your Kiwi TCMS instance URL
 
 # Create a connection to the Kiwi TCMS API
-client = TCMS(username=username, api_key=api_token, uri=f'{tcms_url}/xml-rpc/')
+# client = TCMS(username=username, api_key=api_token, uri=f'{tcms_url}/xml-rpc/')
+client = TCMS(username=kuser, password=kuserp, uri=f'{tcms_url}/xml-rpc/')
+
 
 
 @app.route('/add_product', methods=['POST'])
