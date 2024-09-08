@@ -1,4 +1,4 @@
-# kiwitmspoc
+# Kiwi TMS POC
 Kiwi Test Management System POC
 
 - Install Kiwi TCMS
@@ -11,6 +11,7 @@ Kiwi Test Management System POC
 Once the services have started, Kiwi TCMS should be accessible at http://<IP> in your browser
 - Initialize the database from the UI
 - Create the First user using the Register from UI
-
-
-
+- Install the requirements
+```
+pip install -r requirements.txt
+```
